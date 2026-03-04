@@ -1,0 +1,9 @@
+clear
+ls -la
+cd prueba
+cd ..
+ls
+clear
+prueba
+prueba
+exit

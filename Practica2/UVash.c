@@ -10,11 +10,36 @@ int main (int argc, char *argv[]) {
 	size_t capacidad = 0;
 	ssize_t leidos;
 	
+
+	FILE *entrada = stdin;
+	int modo = 1;		// Iniciamos el modo batch
+
+	// Comprobamos si se ha pasado un archivo#
+	if (argc == 2) {
+		entrada = fopen(argv[1], "r");
+		if (entrada == NULL) {
+			fprintf(stderr, "%s", "[ERROR] -> No se ha podido abrir el modo batch...");
+			exit(1);
+		}
+		modo = 0;	// Apagamos el modo batch
+	
+	} else if (argc > 2) {
+		fprintf(stderr, "%s", "[ERROR] -> Ha ocurrido un error...");
+		exit(1);
+	}
+
+
+
+
 	// Bucle del UVash
 	while(1){
-		linea = NULL;
-		printf("UVash> ");
 		
+		linea = NULL;
+
+		if (modo) {
+			printf("UVash> ");
+		}
+				
 		// 1. Leemos por terminal la entrada por teclado
 		leidos = getline(&linea, &capacidad, stdin);
 		
