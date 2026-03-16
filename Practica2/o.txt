@@ -1,0 +1,10 @@
+total 60
+-rw-r--r-- 1 alexg alexg 11879 Feb 24 14:37 README.md
+-rwxr-xr-x 1 alexg alexg 16880 Mar 16 12:56 UVash
+-rw-r--r-- 1 alexg alexg  4367 Mar 16 12:56 UVash.c
+-rw-r--r-- 1 alexg alexg    57 Mar  4 23:05 batch.txt
+-rw-r--r-- 1 alexg alexg     0 Mar 16 12:56 o.txt
+drwxr-xr-x 2 alexg alexg  4096 Mar  3 17:58 prueba
+-rwxr-xr-x 1 alexg alexg   126 Feb 24 14:37 test-UVash.sh
+drwxr-xr-x 3 alexg alexg  4096 Feb 24 14:37 tests
+drwxr-xr-x 2 alexg alexg  4096 Mar  7 12:10 tests-out
